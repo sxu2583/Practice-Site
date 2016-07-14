@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--Fix the format of the html, or just redo it from scratch-->
+<!--The html5 doctype is required for bootstrap-->
+<html lang="en">
+  <head>
+    
+    <title>website.com</title>
+      <meta charset = "utf-8">
+    <!--This Part is meant to link the css stylesheet to the html doc-->
+      <link rel="stylesheet" href="/css/font-awesome.css">
+      <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+      <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    
+      <!--A small Javascript function that is meant to work when the button is clicked-->
+      <script>
+        function myFunction(){
+          document.getElementById("demo").innerHTML = "Paragraph changed. DUM DUM DUM";
+      }
+      </script>
+  </head>
+
+<!--The body of the website where the actually written peices will be: color was #c1e4f0-->
+  <body>
+    <div id="header">
+        <h1> <font color="#00cccc">A website in progress</font> </h1>
+    </div>
+
+<!--The new naviagation bar-->
+    <div class = "nav">
+      <div class = "container">
+        <ul class = "pull-right">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#forum">forum</a></li>
+        </ul>
+      </div>
+    </div>
+  
+<!--
+This script can be used to create the scroll down webpage
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+      return false;
+  });
+</script>-->
+
+
+    <div style= "margin-left: 10%; padding:1px 16px; height:1000px; id="section">
+        <h3>Demo Idea</h3>
+        <p id="demo">This is an initial test...js</p>
+        <p>First things first an outline. This website will be updated regulary, one of the
+        main prospects of it is so that I can keep my github streak for the entire year</p>
+  
+        <p>This is another test via a grid system</p>
+        <p>
+          This website may generally be slow to advance but I inted to have multiple parts
+          to it.
+          <table border="1" style= "width:100%">
+            <tr>
+              <td>Chat</td>
+              <td>Images</td>
+              <td>Links</td>
+              <td>Charts</td>
+              <td>Coding</td>
+            </tr>
+          </table>
+        </p>
+        <a href="http://www.w3schools.com"><font color="#c1e4f0">This is the reference being used</font> </a>
+        <button type="button" onclick="myFunction()">Touch me</button>
+      
+        <p>
+          Have to get better with alligning the text and adding a staging ground for it
+          <a href="https://github.com/sxu2583">
+          <img src="/css/images/cat.jpg" alt="Link to github" style="width:200px;height:200px;border:0;" >
+          </a>
+        </p>
+        
+      </div>
+      
+      <p>The next thing to do on this site is reformat it and then actually
+      add content and actual links to it. Just messing around with the basic 
+      mechanics right now. So far not too complicated. Most likely will use
+      a bootstrap theme to make it look nice or just use bootstrap in general,
+      in addition to the html5, css and js which will be further added. </p>
+  
+      <div id="footer">
+        Copyright © shihabuddin.me
+      </div>
+
+</body>
+</html>
